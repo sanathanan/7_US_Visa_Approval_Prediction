@@ -37,13 +37,19 @@ list_of_files = [
 
 ]
 
+# Looping each files  
 for filepath in list_of_files:
+    # Converting the file to filepath
     filepath = Path(filepath)
+    # Splitting the filepath into folder_Name and file_Name
     filedir, filename = os.path.split(filepath)
+    # If the folder_name is not empty, then create the folder
     if filedir != "":
         os.makedirs(filedir, exist_ok=True)
+    # If the file_name is not created inside folder_name, then create the file.
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w") as f:
             pass
+    # If the file_name is created then dont need to create a file inside the folder.
     else:
         print(f"file is already present at: {filepath}")
