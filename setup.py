@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 """
-This code is tken from python documentation to make a local package.
+Below template is taken from python documentation to make a local package.
 """
 setup(
     name="us_visa",

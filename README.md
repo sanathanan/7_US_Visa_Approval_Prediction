@@ -19,5 +19,5 @@ source activate base
 conda activate environment_name  
 ```
 
-## To install requorements.txt
+## To install requirements.txt
 pip install -r requirements.txt
